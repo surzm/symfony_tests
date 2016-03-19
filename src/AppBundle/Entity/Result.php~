@@ -1,0 +1,171 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="result")
+ */
+class Result
+{
+
+    /**
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $id;
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    protected $userId;
+
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    protected $testId;
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    protected $questionId;
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    protected $answerId;
+
+    /**
+     * @ORM\Column(type="datetime")
+     */
+    protected $date_time;
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set userName
+     *
+     * @param string $userName
+     * @return Result
+     */
+    public function setUserName($userName)
+    {
+        $this->userName = $userName;
+
+        return $this;
+    }
+
+    /**
+     * Get userName
+     *
+     * @return string 
+     */
+    public function getUserName()
+    {
+        return $this->userName;
+    }
+
+    /**
+     * Set name_of_test
+     *
+     * @param string $nameOfTest
+     * @return Result
+     */
+    public function setNameOfTest($nameOfTest)
+    {
+        $this->name_of_test = $nameOfTest;
+
+        return $this;
+    }
+
+    /**
+     * Get name_of_test
+     *
+     * @return string 
+     */
+    public function getNameOfTest()
+    {
+        return $this->name_of_test;
+    }
+
+    /**
+     * Set question
+     *
+     * @param string $question
+     * @return Result
+     */
+    public function setQuestion($question)
+    {
+        $this->question = $question;
+
+        return $this;
+    }
+
+    /**
+     * Get question
+     *
+     * @return string 
+     */
+    public function getQuestion()
+    {
+        return $this->question;
+    }
+
+    /**
+     * Set answer
+     *
+     * @param string $answer
+     * @return Result
+     */
+    public function setAnswer($answer)
+    {
+        $this->answer = $answer;
+
+        return $this;
+    }
+
+    /**
+     * Get answer
+     *
+     * @return string 
+     */
+    public function getAnswer()
+    {
+        return $this->answer;
+    }
+
+    /**
+     * Set date_time
+     *
+     * @param \DateTime $dateTime
+     * @return Result
+     */
+    public function setDateTime($dateTime)
+    {
+        $this->date_time = $dateTime;
+
+        return $this;
+    }
+
+    /**
+     * Get date_time
+     *
+     * @return \DateTime 
+     */
+    public function getDateTime()
+    {
+        return $this->date_time;
+    }
+}

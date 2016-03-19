@@ -1,0 +1,12 @@
+body {
+    padding: 10%;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+div.test{
+    border: solid #000000 1px;
+}

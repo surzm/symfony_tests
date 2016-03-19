@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <title> Tests </title>
+
+    <h1> Some tests </h1>
+
+    {% for test in tests %}
+        <div class="test">
+            <a href="/test/{{ test.id }}"> {{ test.name }}:</a>
+
+        </div>
+        {% endfor %}
+
+
+{% endblock %}

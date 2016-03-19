@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {#<h1>{{ test.name }}</h1>#}
+
+    {#{% for question in questions %}#}
+        {#<div class="question">#}
+            {#{{ question.text }}#}
+        {#</div>#}
+        {#{% endfor %}#}
+
+    {{ form_start(form) }}
+    {{ form_errors(form) }}
+{{ form_widget(form) }}
+    {{ form_end(form) }}
+
+{% endblock %}
